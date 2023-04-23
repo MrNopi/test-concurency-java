@@ -1,5 +1,6 @@
-package com.mr.nopi.concurency.service;
+package com.mr.nopi.concurency.service.config;
 
+import com.mr.nopi.concurency.service.ConcurrencyServiceApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 

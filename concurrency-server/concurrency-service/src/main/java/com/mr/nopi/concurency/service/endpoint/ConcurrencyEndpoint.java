@@ -1,6 +1,6 @@
 package com.mr.nopi.concurency.service.endpoint;
 
-import com.mr.nopi.concurency.service.ConcurrencyService;
+import com.mr.nopi.concurency.service.multitreading.ConcurrencyService;
 import com.mr.nopi.concurrency.api.ConcurrencyApi;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,7 +13,7 @@ public class ConcurrencyEndpoint implements ConcurrencyApi {
     }
 
     @Override
-    public void concurrencyCalculate(Boolean isConcurrency) {
-
+    public String concurrencyCalculate(Boolean isConcurrency) {
+    return isConcurrency ? service.concurrencyCalculate() : service.nonConcurrencyCalculate();
     }
 }
